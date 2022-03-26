@@ -11,7 +11,9 @@
     "test-links": "node --async-stack-traces --unhandled-rejections=strict ./scripts/test-links.js",
     "prettier": "prettier --write '**/*.{js,ts,tsx}'",
     "test": "jest",
-    "schema-sync": "node --async-stack-traces --unhandled-rejections=strict ./scripts/schema-sync.js"
+    "schema-sync": "node --async-stack-traces --unhandled-rejections=strict ./scripts/schema-sync.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@expo/spawn-async": "^1.5.0",
@@ -40,7 +42,8 @@
     "react-dom": "^16.8.1",
     "react-emotion": "^9.2.9",
     "react-player": "^1.11.1",
-    "react-visibility-sensor": "^5.1.0"
+    "react-visibility-sensor": "^5.1.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.11.0",
@@ -52,5 +55,6 @@
     "prettier": "^1.18.2",
     "puppeteer": "^3.3.0",
     "semver": "^7.3.2"
-  }
+  },
+  "snyk": true
 }
