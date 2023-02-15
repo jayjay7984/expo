@@ -20,7 +20,7 @@
     "@react-navigation/drawer": "~5.8.4",
     "@use-expo/permissions": "^2.0.0",
     "date-format": "^2.0.0",
-    "expo": "~38.0.0",
+    "expo": "~48.0.0",
     "expo-ads-admob": "~8.2.1",
     "expo-ads-facebook": "~8.3.0",
     "expo-app-auth": "~9.1.1",
